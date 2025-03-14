@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-light">
-
+    <!-- Barra de navegação -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Portfólio</a>
@@ -32,6 +35,7 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section id="home" class="bg-secondary text-white py-5 min-vh-100 d-flex align-items-center">
         <div class="container py-3 py-md-5">
             <div class="row align-items-center">
@@ -46,7 +50,7 @@
                 <div class="col-lg-5 text-center">
                     <div class="d-flex justify-content-center align-items-center">
                         <div style="width: min(100%, 300px);">
-                            <img src="profile-picutre.jpeg" alt="Maria_Foto" class="img-fluid rounded-circle border border-4 border-light shadow-lg" width="300" height="300">
+                            <img src="assets/profile-picutre.jpeg" alt="Maria_Foto" class="img-fluid rounded-circle border border-4 border-light shadow-lg" width="300" height="300">
                         </div>
                     </div>
                 </div>
@@ -54,6 +58,7 @@
         </div>
     </section>
 
+    <!-- Sobre Section -->
     <section id="sobre" class="bg-light py-5">
         <div class="container py-3 py-md-5">
             <h2 class="display-5 fw-bold mb-4 pb-2 border-bottom border-dark">Sobre Mim</h2>
@@ -61,7 +66,7 @@
                 <div class="col-md-6">
                     <p>Olá! Sou uma desenvolvedora web apaixonada por criar experiências digitais bonitas e funcionais. Com experiência em HTML, CSS, JavaScript e alguns frameworks modernos, estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades.</p>
                     <p>Minha jornada na programação começou há 8 meses, e desde então tenho trabalhado em diversos projetos que me ajudaram a desenvolver uma compreensão profunda do desenvolvimento web. Sou dedicada a escrever códigos limpos e eficientes, sempre com foco na experiência do usuário.</p>
-                    <p>Quando não estou codificando, aproveito para aprofundar meus conhecimentos em UX/UI através de cursos e também exploro minha criatividade com modelagem 3D.</p>
+                    <p>Quando não estou codificando, dedico meu tempo a estudar cursos da área de UX/UI e a explorar minha criatividade na modelagem 3D.</p>
                     
                     <div class="mt-4">
                         <h4 class="h5 mb-3 fw-bold">Minhas Habilidades</h4>
@@ -105,7 +110,7 @@
                             <li class="mb-2"><strong>Status:</strong> Disponível para novos projetos</li>
                         </ul>
                         <div class="mt-4">
-                            <a href="#" class="btn btn-dark">Download CV</a>
+                            <a href="/assets/curriculo.pdf" class="btn btn-dark" download>Download CV</a>
                             <div class="mt-4">
                                 <h4 class="h5 mb-3 fw-bold">Redes Sociais</h4>
                                 <div class="d-flex gap-3">
@@ -121,10 +126,12 @@
         </div>
     </section>
 
+    <!-- Projetos Section -->
     <section id="projetos" class="bg-white py-5">
         <div class="container py-3 py-md-5">
             <h2 class="display-5 fw-bold mb-4 pb-2 border-bottom border-dark">Portfólio</h2>
             <div class="row g-4">
+                <!-- Projeto 1 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
                         <div class="bg-dark text-white d-flex align-items-center justify-content-center" style="height: 200px;">
@@ -138,14 +145,15 @@
                                 <span class="badge bg-secondary me-1">JavaScript</span>
                             </div>
                             <p class="card-text">Site para uma ONG voltado ao resgate e cuidado de cães abandonados.</p>
-                            <div class="d-grid gap-2 d-sm-flex">
-                                <a href="#" class="btn btn-dark flex-fill">Repositório</a>
-                                <a href="#" class="btn btn-outline-dark flex-fill">Código</a>
+                            <div class="d-flex flex-column flex-sm-row gap-2">
+                                <a href="https://github.com/Rafaela-Heer/Projeto-ong-pacotinho-de-amor" class="btn btn-dark mb-2 mb-sm-0">Repositório</a>
+                                <a href="https://github.com/Rafaela-Heer/Projeto-ong-pacotinho-de-amor/blob/main/index.html" class="btn btn-outline-dark">Código</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 
+                <!-- Projeto 2 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
                         <div class="bg-dark text-white d-flex align-items-center justify-content-center" style="height: 200px;">
@@ -159,13 +167,12 @@
                             </div>
                             <p class="card-text">Projeto ainda em desenvolvimento utilizando C++ e Node-RED.</p>
                             <div class="d-flex flex-column flex-sm-row gap-2">
-                                <a href="#" class="btn btn-dark mb-2 mb-sm-0">Repositório</a>
-                                <a href="#" class="btn btn-outline-dark">Código</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 
+                <!-- Projeto 3 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
                         <div class="bg-dark text-white d-flex align-items-center justify-content-center" style="height: 200px;">
@@ -188,10 +195,14 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="py-4 text-center">
         <div class="container">
             <p class="mb-0">© 2025 Maria Eduarda Ferrés. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html> 
